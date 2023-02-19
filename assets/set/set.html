@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="set/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>SOS</title>
+</head>
+<center>
+    <body>
+        <a href="file:///C:/Users/user/Desktop/verstaem/mogo/index.html" class="button19" >BACK</a>
+        <style>
+           
+
+            a.button19 {
+                text-decoration: none;
+                text-align: center;
+                font-weight: bold;
+                color: rgb(7, 7, 7);
+                border: 1px solid #0f0f0f;
+                padding: 8px 1px 8px 1px;
+                width: 100px;
+                margin-right: 1800px;
+                height: 30px;
+                background-color: rgb(110, 189, 140);
+                border-radius: 4px;
+                display:inline-block;
+               
+  
+            }
+            a.button19:hover { background: rgba(117, 117, 117, 0.2); }
+            a.button19:active { background: white; }
+            
+        </style>
+
+        <style>
+            body{
+                background-color: rgb(110, 189, 140);
+                font-size:x-large
+                font-weight: bold
+            }
+            
+            container{
+                width: 100vh;
+                height: 100vh;
+                max-width: 1200px;
+                margin: 0 auto;
+                text-align: center;
+            }
+           
+        </style>
+
+        <div class="container">
+            <h1>Экстренные значения</h1>
+
+        </div>
+        <table border="1" width="75%" >
+            <tr>
+                <td align="center" style="font-size:x-large; font-weight: bold;">Температура в теплице</td>
+            </tr>
+        </table>
+        <table border="1" width="50%" >
+            <tr>
+                <input type="text" name="value1" style="margin: 5px;" >
+                <input type="submit" value="Отправить">
+            </tr>
+            
+        </table>
+        <hr>
+
+
+
+
+
+        <table border="1" width="75%">
+            <tr>
+                <td align="center"  style="font-size:x-large; font-weight:bold">Влажность воздуха</td>
+            </tr>
+        </table>
+        <table border="1" width="50%">
+            <tr> 
+                <input type="text" name="value2" style="margin: 5px;">
+                <input type="submit" value="Отправить">
+            </tr>
+        </table>
+        <hr>
+
+
+        
+
+
+        <table border="1" width="75%" >
+            <tr>
+                <td align="center"  style="font-size:x-large; font-weight:bold ">Влажность в почве</td>
+            </tr>
+        </table>
+        <table border="1" width="50%" >
+            <tr> 
+                <input type="text" name="value3" style="margin: 5px;" >
+                <input type="submit" value="Отправить">
+            </tr>
+        </table>
+        <hr>
+
+
+
+       
+
+    
+
+    
+        <script language="javascript" type="text/javascript" >
+            var d = new Date();
+            
+            var day=new Array("Воскресенье","Понедельник","Вторник",
+            "Среда","Четверг","Пятница","Суббота");
+            
+            var month=new Array("января","февраля","марта","апреля","мая","июня",
+            "июля","августа","сентября","октября","ноября","декабря");
+            
+            document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]
+            + " " + d.getFullYear() + " г.");
+
+            </script>
+        
+        <script type="text/javascript">
+            function getDate()
+            {
+                var date = new Date();
+                var hours = date.getHours();
+                var minutes = date.getMinutes();
+                var seconds = date.getSeconds();
+               
+                if(seconds < 10)
+                {
+                    seconds = '0' + seconds;
+                }
+                document.getElementById('timedisplay').innerHTML = hours + ':' + minutes + ':' + seconds;
+            }
+            setInterval(getDate, 0);
+            </script>
+            <div id="timedisplay"></div>
+            <hr>
+                
+
+
+            <table border="1" width="75%" >
+                <tr>
+                    <td align="center"  style="font-size:x-large; font-weight:bold ">Температура</td>
+                </tr>
+            </table>
+            <table border="1" width="50%" >
+                <tr> 
+                    <p><input type="text" name="temp_1" >
+                    <input type="submit" value="Отправить"></p>
+
+                    <p></p><input type="text" name="temp_2"  >
+                    <input type="submit" value="Отправить"></p>
+
+                    <p></p><input type="text" name="temp_3" >
+                    <input type="submit" value="Отправить"></p>
+
+                    <p></p><input type="text" name="temp_4"  >
+                    <input type="submit" value="Отправить"></p>
+                </tr>
+            </table>
+            <hr>
+            
+
+
+            <table border="1" width="75%">
+                <tr>
+                    <td align="center"  style="font-size:x-large; font-weight:bold ">Грядки</td>
+                </tr>
+            </table>
+
+            <table border="1" width="50%" >
+                <tr> 
+                    <p><input type="text" name="hum_g_1" >
+                    <input type="submit" value="Отправить"></p>
+
+                    <p><input type="text" name="hum_g_2"  >
+                    <input type="submit" value="Отправить"></p>
+
+                    <p><input type="text" name="hum_g_3"  >
+                    <input type="submit" value="Отправить"></p>
+
+                    <p><input type="text" name="hum_g_4" >
+                    <input type="submit" value="Отправить"></p>
+
+                    <p><input type="text" name="hum_g_5"  >
+                    <input type="submit" value="Отправить"></p>
+
+                    <p><input type="text" name="hum_g_6"  >
+                    <input type="submit" value="Отправить"></p>
+                </tr>
+            </table>
+            <hr>
+
+
+            <table border="1" width="75%" >
+                <tr>
+                    <td align="center"  style="font-size:x-large; font-weight:bold ">Влажность воздуха</td>
+                </tr>
+            </table>
+            
+            <table border="1" width="50%" >
+                <tr> 
+                    <p><input type="text" name="hum_air_1"  >
+                    <input type="submit" value="Отправить"></p>
+
+                    <p><input type="text" name="hum_air_2"  >
+                    <input type="submit" value="Отправить"></p>
+
+                    <p><input type="text" name="hum_air_3" >
+                    <input type="submit" value="Отправить"></p>
+
+                    <p><input type="text" name="hum_air_4"  >
+                    <input type="submit" value="Отправить"></p>
+
+                
+                </tr>
+            </table>
+            <hr>
+
+
+
+
+        
+            
+
+
+
+
+
+</center>
+</body>
+</html>
