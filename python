@@ -1,0 +1,39 @@
+import math
+s = 40
+c = 248
+a, b, sum1, day, road, gn, g, w, oxi = 0, 0, 0, 0, 0, 0, 8, 80, 1
+sum0, day1, y = 0, 0, 0
+
+while a != 1:
+    e = (100 - w) * 11
+    t = (-1 + (math.sqrt(1 + 8 * e))) / 2
+    if t > 30:
+        a = -1
+        #sum1 = sum0
+        #break
+    gn = g + g * math.sin((math.pi * ((-20) + t + 1/2 * oxi)/40))
+    sum0 += oxi * 7
+    sum0 += 10 * w
+    m = 192 + gn
+    g = gn
+    v = 5 * w / m
+    road += v
+    day += 1
+    #print(gn)
+    #a = 1
+    if road >= s:
+        if gn >= c + 8:
+            a = 1
+            sum1 = sum0
+        elif gn > c + 8 or a == -1:
+            sum1 == sum0
+            oxi += 1
+            sum0 = 0
+            b = 1
+        else:
+            if b == 0:
+                w -= 1
+            else:
+                a = 1
+                sum1 = sum0
+print(day)
